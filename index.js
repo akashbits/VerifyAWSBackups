@@ -284,7 +284,11 @@ function prepareInstanceSummary(_instanceList, _snapshotList, _amiList) {
             return b.daysOld - a.daysOld;
         });
 
-        if (inst.hasImage) inst.recentAMIAge = inst.amis[0].daysOld;
+         if(inst.hasImage) {
+            inst.recentAMIAge =inst.amis[inst.amis.length-1].daysOld;
+            inst.amiDetail=inst.amis[inst.amis.length-1];
+            inst.amis=[inst.amiDetail];
+        }
 
     });
 
