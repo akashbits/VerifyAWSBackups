@@ -1,0 +1,16 @@
+{
+  "name": "check-ami-availability",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akash Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.238.1",
+    "dotenv": "^5.0.1",
+    "promise": "^8.0.1"
+  }
+}
